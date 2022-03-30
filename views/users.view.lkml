@@ -103,4 +103,10 @@ view: users {
     type: count
     drill_fields: [id, first_name, last_name, orders.count]
   }
+
+  dimension: full_name {
+    type: string
+    sql: CONCAT(${first_name}, ' ', ${last_name}) ;;
+  }
+
 }

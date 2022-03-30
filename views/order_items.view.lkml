@@ -76,4 +76,5 @@ view: order_items {
     sql: ${sale_price} ;;
     value_format: "$#,##0.00"
   }
+
 }
